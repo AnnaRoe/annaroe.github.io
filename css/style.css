@@ -19,6 +19,12 @@ body {
   color: #000000;
 }
 
+.logo {
+  float: left;
+  font-size: 1.5em;
+  padding-top: 10px;
+}
+
 h1, h2, h3, h4 {
   line-height: 1.4;
 }
@@ -53,25 +59,19 @@ a {
   /* No underlining */
 }
 
-a:hover {
-  color: #06183E;
-  text-decoration: underline;
-  /* Underlining when hovering over a link */
-}
-
 a:visited {
   /* visited link */
-  color: blue;
+  color: #bcbcbc;
 }
 
 a:active {
   /* selected link */
-  color: #994c30;
+  color: #000000;
 }
 
 a:hover,
 a:focus {
-  color: #cc6540;
+  color: #5b5b5b;
   text-decoration: underline;
 }
 
@@ -96,10 +96,10 @@ a:focus {
 }
 
 .button.contact {
-  background-color: transparent;
-  color: #ff7f50;
+  background-color: #ffffff;
+  color: #000000;
   text-transform: uppercase;
-  border: 2px solid #ff7f50;
+  border: 2px solid #000000;
 }
 
 .button.contact:hover {
@@ -117,14 +117,14 @@ a:focus {
   /* 25px top and bottom, 0 left and right */
 }
 
-#hero h1 {
+#hero h1, p {
   text-align: center;
   /* Centers text */
 }
 
 nav>ul {
   list-style-type: none;
-  padding: 0px;
+  padding: 15px;
   float: right;
 }
 
@@ -151,8 +151,23 @@ header {
   position: fixed;
   width: 100%;
   padding: 20px;
+  background-color: #ffffff;
 }
 
 main {
   padding-top: 133px;
+}
+
+.social {
+  text-align: center;
+}
+
+.social a {
+  display: inline-block;
+  margin: 0 5px;
+}
+
+.social svg {
+  width: 25px;
+  height: auto;
 }
