@@ -23,6 +23,7 @@ body {
   font-size: 1.5em;
   padding-top: 10px;
   display: inline-block;
+  max-width: 150px;
 }
 
 h1, h2, h3, h4 {
@@ -62,7 +63,7 @@ a {
 
 a:visited {
   /* visited link */
-  color: #bcbcbc;
+  color: #5b5b5b;
 }
 
 a:active {
@@ -146,13 +147,11 @@ p {
 
 nav>ul {
   list-style-type: none;
-  padding: 15px;
-  float: center;
+  padding: 0px;
+  margin:0;
 }
 
-nav>ul>li {
-  display: inline-block;
-}
+
 
 nav>ul>li>a {
   padding: 0 15px;
@@ -175,7 +174,8 @@ header {
   width: 100%;
   padding: 20px;
   background-color: #ffffff;
-  text-align: center;
+  padding: 10px 0 4px;
+
 }
 
 #anna {
@@ -186,7 +186,7 @@ header {
 }
 
 main {
-  padding-top: 183px;
+  padding-top: 100px;
 }
 
 .social {
@@ -233,7 +233,7 @@ footer {
   height: auto;
 }
 
-@keyframes color-change {
+/* @keyframes color-change {
   0% {
     fill: #edc655;
   }
@@ -245,8 +245,8 @@ footer {
   100% {
     fill: #f76414;
   }
-}
-
+} */
+/*
 .sun {
   animation-duration: 4s;
   animation-name: color-change;
@@ -289,6 +289,31 @@ footer {
   animation-iteration-count: infinite;
   animation-direction: alternate;
   animation-timing-function: linear;
+} */
+
+.navtoggle li:not(:last-child) {
+  display: none;
+}
+
+.navtoggle, .navtoggle.responsive {
+  position: relative;
+}
+
+.navtoggle li .icon {
+  position: absolute;
+  right: 0;
+  top: 30px;
+  font-size: 20px;
+  padding-right:0;
+}
+.navtoggle.responsive li  {
+  display: block;
+}
+
+.navtoggle.responsive li  {
+  display: block;
+  padding: 10px 0;
+  border-top: 1px solid rgba(255,127,80,0.5);
 }
 
 /*Medium devices (640px and larger)*/
@@ -367,6 +392,25 @@ footer {
   p {
     text-align: left;
   }
+
+  .logo{
+    max-width: none;
+  }
+  nav>ul>li {
+    display: inline-block;
+  }
+  .navtoggle li:not(:last-child) {
+    display: inline-block;
+  }
+
+  .navtoggle li:last-child {
+  display: none;
+}
+
+nav>ul{
+  margin: 1.5em 0;
+}
+
 }
 
 /*Large devices (1024px or larger)*/
@@ -424,6 +468,8 @@ footer {
     margin-left: auto;
     margin-right: auto;
   }
+
+
 }
 
 /*X-large devices (1440px or larger)*/

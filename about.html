@@ -9,81 +9,99 @@
   <link rel="stylesheet" type="text/css" href="css/style.css">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <script src="https://kit.fontawesome.com/6aa0cec437.js" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <script src="js/scripts.js"></script>
 </head>
 
 
-<body id="about-page">
+<body>
   <header>
     <div class="container">
-      <h1 class="logo"><a href="index.html">Anna Roe | UX</a></h1>
-      <nav>
-        <ul>
-          <li><a href="about.html">About</a></li>
-          <li><a href="index.html">Work</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </nav>
+      <div class="navtoggle" id="myNavtoggle">
+        <h1 class="logo"><a href="index.html">Anna Roe | UX</a></h1>
+        <nav>
+          <ul>
+            <li><a class="menu-link" href="about.html">About</a></li>
+            <li><a class="menu-link" href="index.html">Work</a></li>
+            <li><a class="menu-link" href="#contact"onclick="menuToggle()">Contact</a></li>
+            <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"></i></a></li>
+          </ul>
+
+        </nav>
+      </div>
     </div>
   </header>
 
   <main>
     <div id="hero">
       <div class="container">
-        <h1>About</h1>
+        <h1>Hello, nice to meet you.</h1>
       </div>
     </div>
 
     <div>
       <div class="container">
-        <picture>
-          <source srcset="img/anna_mobile.jpg" media="(max-width:767px)">
-          <img src="img/anna_desktop.jpg" alt="Anna Roe Portrait" id="anna">
-        </picture>
         <div class="row">
-          <!-- open row that holds (2) columns for story and skills&tools -->
-          <div class="col-lg-6">
-            <!-- open first column my story -->
-            <h2>My Story</h2>
+          <!-- open row that holds (2) columns for about and my image -->
+
+          <div class="col-md-6">
             <p class="bio">My name is Anna. I’ve trained as a UX designer and front-end developer, and I also trained as a mother, partner, activist, and community member.
               I was born and raised in Prague, the Czech Republic. Today I live 8,605km west in Portland, Oregon.</p>
             <a href="files/resume.pdf" class="button" target="_blank">My Resume</a>
-          </div><!-- close first column my story -->
-          <div class="col-md-6">
-            <div class="row">
-              <h2>Skills and Tools</h2>
-              <!-- open second column used skills&tools -->
-              <div class="col-md-6 col-lg-12">
-                <!-- open second column used skills -->
-                <h3>UX Design Process</h3>
-                <ul>
-                  <li>UX Research</li>
-                  <li>Information architecture</li>
-                  <li>User Journey</li>
-                  <li>Flow mapping</li>
-                  <li>Personas</li>
-                  <li>Wireframing</li>
-                  <li>Prototyping</li>
-                  <li>Typography</li>
-                  <li>Layout</li>
-                  <li>Sketching</li>
-                </ul>
-              </div><!-- close second column used skills -->
+          </div>
 
-              <!-- open second column used tools -->
-              <div class="col-md-6 col-lg-12">
-                <h3>Design Build</h3>
-                <ul>
-                  <li>Adobe InDesign</li>
-                  <li>Adobe Illustrator</li>
-                  <li>Adobe Photoshop</li>
-                  <li>Figma</li>
-                  <li>HTML/CSS</li>
-              </div>
+          <div class="col-md-6">
+            <picture>
+              <source srcset="img/anna_mobile.jpg" media="(max-width:767px)">
+              <img src="img/anna_desktop.jpg" alt="Anna Roe Portrait" id="anna">
+            </picture>
+
+          </div>
+        </div><!-- close row that holds (2) columns for about and my image -->
+
+        <div class="container">
+          <h2>Skills and Tools</h2>
+
+          <div class="row">
+            <!-- open row that holds (2) columns for story and skills&tools -->
+            <div class="col-md-6">
+              <!-- open second column for for Design Process -->
+              <h3>UX Design Process</h3>
+              <ul>
+                <li>UX Research</li>
+                <li>Information architecture</li>
+                <li>User Journey</li>
+                <li>Flow mapping</li>
+                <li>Personas</li>
+                <li>Wireframing</li>
+                <li>Prototyping</li>
+                <li>Typography</li>
+                <li>Layout</li>
+                <li>Sketching</li>
               </ul>
-            </div>
-          </div><!-- close second column used skills -->
-        </div> <!-- end row that holds (2) story and skills&tools -->
+            </div><!-- close second column for Design Process -->
+
+            <!-- open second column for Design Build -->
+            <div class="col-md-6">
+              <h3>Design Build</h3>
+              <ul>
+                <li>Adobe InDesign</li>
+                <li>Adobe Illustrator</li>
+                <li>Adobe Photoshop</li>
+                <li>Figma</li>
+                <li>HTML/CSS</li>
+              </ul>
+            </div><!-- close second column for Design Build -->
+
+
+
+          </div> <!-- end row that holds (2) story and skills&tools -->
+        </div>
       </div>
+
+
     </div>
   </main>
 
@@ -132,7 +150,10 @@
         <img src="http://via.placeholder.com/32x32">
       </a>
     </div>
-    <p>Copyright Anna Roe 2021</p>
+
+
+    <div>
+      <p>Copyright Anna Roe 2021</p>
     </div>
 
   </footer>
