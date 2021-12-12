@@ -93,13 +93,14 @@ a:focus {
 
 .button {
   display: inline-block;
-  background-color: #000000;
+  background-color: #ffe4c4;
   color: white;
   font-weight: 400;
   text-decoration: none;
   padding: 10px;
   border-radius: 0px;
-  border-bottom: 2px solid #000000;
+
+
   transition: 0.2s opacity;
 }
 
@@ -231,6 +232,13 @@ footer {
   width: 100%;
   max-width: 100%;
   height: auto;
+}
+
+.connect{
+font-weight: 600;
+}
+.copyright{
+  font-size: 12px;
 }
 
 /* @keyframes color-change {
