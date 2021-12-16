@@ -1,136 +1,131 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
 
-<head>
-  <meta charset="utf-8">
-  <title>Anna Roe | UX | Git Commit</title>
-  <link rel="icon" type="image/png" href="files/favicon.png" sizes="32x32" />
+  <head>
+    <meta charset="utf-8">
+    <title>Anna Roe | UX | Git Commit</title>
+    <link rel="icon" type="image/png" href="files/favicon.png" sizes="32x32" />
 
-  <link rel="stylesheet" type="text/css" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
-  <link rel="stylesheet" type="text/css" href="css/style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <script src="https://kit.fontawesome.com/6aa0cec437.js" crossorigin="anonymous"></script>
-  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-  <script src="js/scripts.js"></script>
-</head>
+    <script src="https://kit.fontawesome.com/6aa0cec437.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="js/scripts.js"></script>
+  </head>
 
-
-<body>
-  <header>
-    <div class="container">
-      <div class="navtoggle" id="myNavtoggle">
-        <h1 class="logo"><a href="index.html">Anna Roe | UX</a></h1>
-        <nav>
-          <ul>
-            <li><a class="menu-link" href="about.html">About</a></li>
-            <li><a class="menu-link" href="index.html">Work</a></li>
-            <li><a class="menu-link" href="#contact"onclick="menuToggle()">Contact</a></li>
-            <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"></i></a></li>
-          </ul>
-
-        </nav>
-      </div>
-    </div>
-  </header>
-
-  <main>
-
-    <div id="hero">
+  <body>
+    <header>
       <div class="container">
-        <h1>Hi, my name is Anna.
-          I am a human, designing simple and sustainable solutions for everyone.
+        <div class="navtoggle" id="myNavtoggle">
+          <h1 class="logo"><a href="index.html">Anna Roe | UX</a></h1>
+          <nav>
+            <ul>
+              <li><a class="menu-link" href="about.html">About</a></li>
+              <li><a class="menu-link" href="index.html">Work</a></li>
+              <li><a class="menu-link" href="#contact" onclick="menuToggle()">Contact</a></li>
+              <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"></i></a></li>
+            </ul>
 
-        </h1>
-        
+          </nav>
+        </div>
       </div>
-    </div>
+    </header>
 
+    <main>
 
-    <div id="my work">
-      <!-- work section -->
-      <div class="container">
-        <h2>My Work</h2>
+      <div id="hero">
+        <div class="container">
+          <h1>Hi, my name is Anna.
+            I am a human, designing simple and sustainable solutions for everyone.
 
+          </h1>
 
-        <div class="row">
-          <!-- PROjECT #1 -->
+        </div>
+      </div>
+
+      <div id="mywork">
+        <!-- work section -->
+        <div class="container">
+          <h2>My Work</h2>
+
+          <div class="row">
+            <!-- PROjECT #1 -->
+            <!-- open row that holds (2) columns for project -->
+            <div class="col-md-6 col-lg-7">
+              <!-- open first column (used for image) -->
+              <picture>
+                <source srcset="img/balance_mobile.jpg" media="(max-width:767px)">
+                <img src="img/balance_desktop.jpg" alt="Balance Project Image">
+              </picture>
+
+            </div><!-- end first column -->
+
+            <div class="col-md-6 col-lg-5">
+              <!-- open second column (used for text) -->
+              <h3>BALANCE</h3>
+              <p>
+                How do I optimize my work-life balance?
+                 
+              </p>
+              <p>I have applied UX research, prototyping, usability testing to uncover new ways to meet peoples' needs. My role was to develop the platform through every stage of the design thinking process.
+              </p>
+              <a class="button" href="balance.html">View This Project</a><!-- button or link label -->
+            </div><!-- end second column -->
+
+          </div><!-- end row that holds (2) columns for project -->
+          <!-- PROjECT #1 END-->
+
           <!-- open row that holds (2) columns for project -->
-          <div class="col-md-6 col-lg-7">
-            <!-- open first column (used for image) -->
-            <picture>
-              <source srcset="img/balance_mobile.jpg" media="(max-width:767px)">
-              <img src="img/balance_desktop.jpg" alt="Balance Project Image">
-            </picture>
+          <div class="row">
+            <!-- PROjECT #2 -->
+            <div class="col-md-6 col-lg-7">
+              <!-- open first column (used for image) -->
+              <picture>
+                <source srcset="img/frontend.jpg" media="(max-width:767px)">
+                <img src="img/frontend.jpg" alt="Frontend Project Image">
+              </picture>
 
-          </div><!-- end first column -->
+            </div><!-- end first column -->
 
-          <div class="col-md-6 col-lg-5">
-            <!-- open second column (used for text) -->
-            <h3>BALANCE</h3>
-            <p>
-              How do I optimize my work-life balance?
-               
-            </p>
-            <p>I have applied UX research, prototyping, usability testing to uncover new ways to meet peoples' needs. My role was to develop the platform through every stage of the design thinking process.
-            </p>
-            <a class="button" href="balance.html">View This Project</a><!-- button or link label -->
-          </div><!-- end second column -->
+            <div class="col-md-6 col-lg-5">
+              <!-- open second column (used for text) -->
+              <h3>THIS WEBSITE</h3>
+              <p>
+                HTML, CSS, Javascript? No problem.
+                 
+              </p>
+              <p>I have built this site from the ground up website using HTML, CSS, and some JavaScript. I took this project through all the 5 stages of the Design Thinking Process (emphasize, define, ideate, prototype, and test).
 
-        </div><!-- end row that holds (2) columns for project -->
-        <!-- PROjECT #1 END-->
+              </p>
+              <a class="button" href="balance.html">View This Project</a><!-- button or link label -->
+            </div><!-- end second column -->
 
-        <!-- open row that holds (2) columns for project -->
-        <div class="row">
-          <!-- PROjECT #2 -->
-          <div class="col-md-6 col-lg-7">
-            <!-- open first column (used for image) -->
-            <picture>
-              <source srcset="img/frontend.jpg" media="(max-width:767px)">
-              <img src="img/frontend.jpg" alt="Frontend Project Image">
-            </picture>
+          </div><!-- end row that holds (2) columns for project -->
+          <!-- PROjECT #2 END-->
 
-          </div><!-- end first column -->
-
-          <div class="col-md-6 col-lg-5">
-            <!-- open second column (used for text) -->
-            <h3>THIS WEBSITE</h3>
-            <p>
-              HTML, CSS, Javascript? No problem.
-               
-            </p>
-            <p>I have built this site from the ground up website using HTML, CSS, and some JavaScript. I took this project through all the 5 stages of the Design Thinking Process (emphasize, define, ideate, prototype, and test).
-
-            </p>
-            <a class="button" href="balance.html">View This Project</a><!-- button or link label -->
-          </div><!-- end second column -->
-
-        </div><!-- end row that holds (2) columns for project -->
-        <!-- PROjECT #2 END-->
-
-
-
+        </div>
       </div>
-  </main>
+    </main>
 
-  <footer id="contact">
-    <div class="container">
-      <!--Email Connect-->
-      <p class="connect"> Do you like my work? Let's connect!</p>
-      <div class="style">
-        <a href="mailto:anna.istvanfy@gmail.com">Email |</a>
-        <a href="https://www.linkedin.com/in/anna-roe" target="_blank">LinkedIn |</a>
-        <a href="https://www.behance.net/gallery/129326117/BALANCE" target="_blank">Behance |</a>
-        <a href="files/resume.pdf" target="_blank">Resume</a>
+    <footer id="contact">
+      <div class="container">
+        <!--Email Connect-->
+        <p class="connect"> Do you like my work? Let's connect!</p>
+        <div class="style">
+          <a href="mailto:anna.istvanfy@gmail.com">Email |</a>
+          <a href="https://www.linkedin.com/in/anna-roe" target="_blank">LinkedIn |</a>
+          <a href="https://www.behance.net/gallery/129326117/BALANCE" target="_blank">Behance |</a>
+          <a href="files/resume.pdf" target="_blank">Resume</a>
+        </div>
       </div>
-    </div>
-    <p class="copyright">Copyright Anna Roe 2021</p>
-  </footer>
+      <p class="copyright">Copyright Anna Roe 2021</p>
+    </footer>
 
-  <script src="js/scripts.js"></script>
+    <script src="js/scripts.js"></script>
 
-
-</body>
+  </body>
 
 </html>

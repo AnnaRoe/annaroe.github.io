@@ -77,18 +77,14 @@ a:focus {
   text-decoration: underline;
 }
 
-
-
 .button {
   display: inline-block;
-  background-color: #ffe4c4;
-  color: black;
-  font-weight: 400;
+  background-color: #FFE4C4;
+  color: #000000;
+  font-weight: 500;
   text-decoration: none;
   padding: 12px;
   border-radius: 0px;
-
-
   transition: 0.2s opacity;
 }
 
@@ -97,8 +93,6 @@ a:focus {
   /* Reduces the opacity of the button to 80% */
   text-decoration: none;
 }
-
-
 
 /* Layout styling */
 .container {
@@ -127,10 +121,8 @@ p {
 nav>ul {
   list-style-type: none;
   padding: 0px;
-  margin:0;
+  margin: 0;
 }
-
-
 
 nav>ul>li>a {
   padding: 0 15px;
@@ -154,7 +146,6 @@ header {
   padding: 20px;
   background-color: #ffffff;
   padding: 10px 0 4px;
-
 }
 
 #anna {
@@ -212,10 +203,11 @@ footer {
   height: auto;
 }
 
-.connect{
-font-weight: 600;
+.connect {
+  font-weight: 600;
 }
-.copyright{
+
+.copyright {
   font-size: 12px;
 }
 
@@ -276,7 +268,6 @@ font-weight: 600;
   animation-direction: alternate;
   animation-timing-function: linear;
 } */
-
 .navtoggle li:not(:last-child) {
   display: none;
 }
@@ -290,16 +281,17 @@ font-weight: 600;
   right: 0;
   top: 30px;
   font-size: 20px;
-  padding-right:0;
+  padding-right: 0;
 }
-.navtoggle.responsive li  {
+
+.navtoggle.responsive li {
   display: block;
 }
 
-.navtoggle.responsive li  {
+.navtoggle.responsive li {
   display: block;
   padding: 10px 0;
-  border-top: 1px solid rgba(255,127,80,0.5);
+  border-top: 1px solid rgba(255, 127, 80, 0.5);
 }
 
 /*Medium devices (640px and larger)*/
@@ -379,24 +371,30 @@ font-weight: 600;
     text-align: left;
   }
 
-  .logo{
+  .logo {
     max-width: none;
   }
+
   nav>ul>li {
     display: inline-block;
   }
+
   .navtoggle li:not(:last-child) {
     display: inline-block;
   }
 
   .navtoggle li:last-child {
-  display: none;
-}
+    display: none;
+  }
 
-nav>ul{
-  margin: 1.5em 0;
-}
+  nav>ul {
+    margin: 1.5em 0;
+  }
 
+  .navtoggle.responsive li {
+    padding: 0;
+    border-top: 0;
+  }
 }
 
 /*Large devices (1024px or larger)*/
@@ -454,8 +452,6 @@ nav>ul{
     margin-left: auto;
     margin-right: auto;
   }
-
-
 }
 
 /*X-large devices (1440px or larger)*/
