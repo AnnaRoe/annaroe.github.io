@@ -2,6 +2,7 @@
 colors used:
 black color: #000000;
 white color: #FFFFFF;
+yellow color: #FFD977;
 */
 * {
   box-sizing: border-box;
@@ -79,7 +80,7 @@ a:focus {
 
 .button {
   display: inline-block;
-  background-color: #FFE4C4;
+  background-color: #FFD977;
   color: #000000;
   font-weight: 500;
   text-decoration: none;
@@ -89,9 +90,10 @@ a:focus {
 }
 
 .button:hover {
-  opacity: 0.5;
+  opacity: 0.9;
   /* Reduces the opacity of the button to 80% */
   text-decoration: none;
+  transform: scale(1.5);
 }
 
 /* Layout styling */
@@ -133,7 +135,7 @@ nav>ul>li>a {
 }
 
 #hero {
-  background-color: #ffe4c4;
+  background-color: #FFD977;
   padding: 20px 0;
   display: inline-block;
   width: 100%;
