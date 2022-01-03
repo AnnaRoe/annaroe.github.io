@@ -3,6 +3,9 @@ colors used:
 black color: #000000;
 white color: #FFFFFF;
 yellow color: #FFD977;
+another yellow color: #FFBD33;
+another blue color: #3375FF;
+
 */
 * {
   box-sizing: border-box;
@@ -93,7 +96,7 @@ a:focus {
   opacity: 0.9;
   /* Reduces the opacity of the button to 80% */
   text-decoration: none;
-  transform: scale(1.5);
+  transform: scale(1.1);
 }
 
 /* Layout styling */
@@ -109,6 +112,12 @@ a:focus {
 #hero p, h1 {
   text-align: center;
   /* Centers text */
+}
+
+#contact {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: #FFD977;
 }
 
 #contact p {
