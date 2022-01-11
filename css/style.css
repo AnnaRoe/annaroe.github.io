@@ -222,6 +222,10 @@ footer {
   font-size: 12px;
 }
 
+::selection {
+  background-color: #FFD977;
+}
+
 /* @keyframes color-change {
   0% {
     fill: #edc655;
