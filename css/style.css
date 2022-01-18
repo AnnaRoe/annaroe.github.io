@@ -65,6 +65,17 @@ a {
   /* No underlining */
 }
 
+.button {
+  display: inline-block;
+  background-color: #FFD977;
+  color: #000000;
+  font-weight: 500;
+  text-decoration: none;
+  padding: 12px;
+  border-radius: 0px;
+  transition: 0.2s opacity;
+}
+
 a:visited {
   /* visited link */
   color: #5b5b5b;
@@ -79,17 +90,6 @@ a:hover,
 a:focus {
   color: #5b5b5b;
   text-decoration: underline;
-}
-
-.button {
-  display: inline-block;
-  background-color: #FFD977;
-  color: #000000;
-  font-weight: 500;
-  text-decoration: none;
-  padding: 12px;
-  border-radius: 0px;
-  transition: 0.2s opacity;
 }
 
 .button:hover {
