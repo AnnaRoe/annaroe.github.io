@@ -81,7 +81,7 @@ img {
 
 a {
   color: #000000;
-  text-decoration: none;
+  text-decoration: underline;
   /* No underlining */
 }
 
@@ -107,12 +107,13 @@ a:active {
 }
 
 a:hover,
-a:focus {
+a:focus, {
   color: #5b5b5b;
   text-decoration: underline;
 }
 
-.button:hover {
+.button:hover,
+  {
   opacity: 0.9;
   /* Reduces the opacity of the button to 80% */
   text-decoration: none;
@@ -139,8 +140,8 @@ a:focus {
 }
 
 #contact {
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-top: 200px;
+  padding-bottom: 200px;
   border-top: 100px;
   background-color: #FFC726;
 }
@@ -220,7 +221,7 @@ main {
 
 .bio {
   font-weight: bolder;
-  font-size: 1.5em;
+  font-size: 1.2em;
 }
 
 footer {
@@ -244,6 +245,7 @@ footer {
 }
 
 .connect {
+  font-size: 20px;
   font-weight: 600;
 }
 
