@@ -87,8 +87,8 @@ a {
 
 .button {
   display: inline-block;
-  background-color: #FFC726;
-  color: #000000;
+  background-color: #E03131;
+  color: #ffffff;
   font-weight: 500;
   text-decoration: none;
   padding: 12px;
@@ -96,28 +96,29 @@ a {
   transition: 0.2s opacity;
 }
 
+.button:hover {
+  background-color: #ffffff;
+  color: #E03131;
+  border-style: solid;
+  border-color: #E03131;
+  opacity: 0.9;
+  /* Reduces the opacity of the button to 80% */
+}
+
 a:visited {
   /* visited link */
-  color: #5b5b5b;
+  color: #ffffff;
 }
 
 a:active {
   /* selected link */
-  color: #000000;
+  color: #ffffff;
 }
 
 a:hover,
 a:focus, {
-  color: #5b5b5b;
+  color: #ffffff;
   text-decoration: underline;
-}
-
-.button:hover,
-  {
-  opacity: 0.9;
-  /* Reduces the opacity of the button to 80% */
-  text-decoration: none;
-  transform: scale(1.1);
 }
 
 /* Layout styling */
