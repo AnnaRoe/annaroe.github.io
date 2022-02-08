@@ -79,25 +79,20 @@ img {
   font-weight: bold;
 }
 
-a {
-  color: #000000;
-  text-decoration: underline;
-  /* No underlining */
-}
-
 .button {
   display: inline-block;
   background-color: #E03131;
   color: #ffffff;
   font-weight: 500;
-  text-decoration: none;
   padding: 12px;
   border-radius: 0px;
   transition: 0.2s opacity;
+  text-decoration: none;
 }
 
 .button:hover {
-  background-color: #ffffff;
+  display: inline-block;
+  background-color: #FFFFFF;
   color: #E03131;
   border-style: solid;
   border-color: #E03131;
@@ -105,19 +100,41 @@ a {
   /* Reduces the opacity of the button to 80% */
 }
 
-a:visited {
-  /* visited link */
-  color: #ffffff;
+/*
+a {
+  color: #000000;
+  text-decoration: underline;
+  /* No underlining */
 }
 
+.button:visited {
+  background-color: #ffffff;
+  color: #E03131;
+}
+
+/*
+a:visited {
+  color: #000000;
+}
+*/
 a:active {
   /* selected link */
-  color: #ffffff;
+  color: #000000;
 }
 
+.social, .menu-link, .logo {
+  text-decoration: none;
+  color: #000000;
+}
+
+.social:hover, .menu-link:hover, .logo:hover {
+  text-decoration: underline;
+}
+
+/*
 a:hover,
 a:focus, {
-  color: #ffffff;
+  color: #000000;
   text-decoration: underline;
 }
 
